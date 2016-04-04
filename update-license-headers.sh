@@ -1,4 +1,8 @@
 #!/usr/bin/env bash
-echo 'hello'
-~/Downloads/gradle-2.12/bin/gradle licenseFormat
-exit 0
+
+# run the license updates with the gradle wrapper
+./gradlew licenseFormat 
+
+# store the last exit code in a variable
+RESULT=$?
+exit $RESULT
