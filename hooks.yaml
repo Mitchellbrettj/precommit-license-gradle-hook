@@ -1,0 +1,6 @@
+-   id: license-headers 
+    name: Add or Update License Headers
+    description: This hook update license headers on source files 
+    entry: update-license-headers.sh    
+    language: script
+    files: \.(js|css)$
